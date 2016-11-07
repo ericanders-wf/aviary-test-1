@@ -8,7 +8,7 @@ setup(name='test-aviary',
       )
 
 def get_requirements(filename):
-    reqs = parse_requirements(filename)
+    reqs = parse_requirements(filename, session=None)
 
     return [str(r.req) for r in reqs]
 
